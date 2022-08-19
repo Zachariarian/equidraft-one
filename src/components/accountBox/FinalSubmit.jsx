@@ -40,8 +40,9 @@ const FinalSubmit = (props) => {
                         />
 
                         <Typography variant="subtitle1" className={classes.text}>
-                        Click the button on the left once you Read & Accept <a href="https://equitygroupholdings.com/ke/terms-and-conditions">  Terms and conditions</a>
+                        
                         </Typography>
+                        Please Read & Accept <a href="https://equitygroupholdings.com/ke/terms-and-conditions">  Terms and conditions</a>
                         <br/>
                         {
                             props.error !== "" ? <div style={{color: "red"}}>Please agree to the terms & conditions.</div> : ""

@@ -26,7 +26,7 @@ const MobileHeader = props => {
     const fullList = (
         <div className={classes.list}>
             <List>
-                {[{title: "Predictor", link: "/predict"}, {title: "Apply", link: "/apply"}, {title: "My Loans", link: "/loans"}].map((menu, index) => (
+                {[{title: "Login", link: "/login"}, {title: "Signup", link: "/signup"}, {title: "Predictor", link: "/predict"}, {title: "Apply", link: "/apply"}, {title: "My Loans", link: "/loans"}].map((menu, index) => (
                     <ListItem button key={menu.title} onClick={() => props.history.push(menu.link) || props.toggleDrawer()}>
                         <ListItemText primary={menu.title} />
                         <ListItemIcon>{<Icon>chevron_right</Icon>}</ListItemIcon>
@@ -41,7 +41,7 @@ const MobileHeader = props => {
                 <Toolbar>
                     <IconButton onClick={props.toggleDrawer}><Icon style={{color: "white"}}>menu</Icon></IconButton>
                     <Typography variant="h6" color="inherit" className={classes.grow}>
-                        M<MonitizationOn className={classes.icon}/>ney Lender
+                        E<MonitizationOn className={classes.icon}/>quidraft
                     </Typography>
 
                 </Toolbar>

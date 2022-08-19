@@ -64,6 +64,14 @@ const navs = [
     {
         name: "My loans",
         link: "loans"
+    },
+    {
+        name: "Signup",
+        link: "signup"
+    },
+    {
+        name: "Login",
+        link: "login"
     }
 ];
 
@@ -82,7 +90,7 @@ const LeftSection = (props) => {
     return (
         <Paper className={classes.root}>
             <Typography component="h3" variant="h3" className={classes.appName}>
-                M<MonitizationOn className={classes.icon}/>ney Lender
+                E<MonitizationOn className={classes.icon}/>quidraft
             </Typography>
             {
                 navs.map((nav, index) => {

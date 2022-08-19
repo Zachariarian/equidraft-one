@@ -44,7 +44,7 @@ class Predictor extends React.Component {
 
         return (
             <div className={classes.root}>
-                <Heading>Predictor</Heading>
+                <Heading>Equidraft Predictor</Heading>
 
 
                 <PredictorForm/>
