@@ -40,11 +40,7 @@ const FinalSubmit = (props) => {
                         />
 
                         <Typography variant="subtitle1" className={classes.text}>
-                            I accept lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Click the button on the left once you Read & Accept <a href="https://equitygroupholdings.com/ke/terms-and-conditions">  Terms and conditions</a>
                         </Typography>
                         <br/>
                         {
