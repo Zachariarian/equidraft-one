@@ -1,5 +1,5 @@
 import {getInterest} from "../actions/PredictorAction";
-import Store from "../Store";
+import Store from "../store";
 
 const defaultState = {
     data: {

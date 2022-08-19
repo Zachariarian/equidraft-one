@@ -5,7 +5,7 @@ import App from './components/containers/App';
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from "react-redux";
-import store from "./components/Store";
+import store from "./components/store";
 import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
