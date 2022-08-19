@@ -1,19 +1,19 @@
 import {getInterest} from "../actions/PredictorAction";
-import store from "../Store";
+import Store from "../Store";
 
 const defaultState = {
     data: {
         loanTypes: [
             {
-                title: "Car",
+                title: "Personal",
                 icon: "directions_car"
             },
             {
-                title: "Home",
+                title: "Small Enterprise",
                 icon: "home"
             },
             {
-                title: "Education",
+                title: "Medium Enterprise",
                 icon: "school"
             }
         ],
@@ -52,7 +52,7 @@ const PredictorReducer = (state = defaultState, action) => {
                     monthlyPayment: null
                 }
             };
-            store.dispatch(getInterest({
+            Store.dispatch(getInterest({
                 loanAmount: state.values.loanAmount,
                 termLength: state.values.termLength,
             }));

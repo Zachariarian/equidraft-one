@@ -3,15 +3,19 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/containers/App';
 import reportWebVitals from './reportWebVitals';
-
+import * as serviceWorker from './serviceWorker';
+import {Provider} from "react-redux";
+import store from "./components/Store";
+import {BrowserRouter} from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-  <browserRouter>
-  <App />
-  </browserRouter>
-  
-  </React.StrictMode>,
+  <React.Fragment>
+  <Provider store={store}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>
+  </React.Fragment>,
   document.getElementById('root')
 );
 
@@ -20,11 +24,4 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-const array = [];
-while (true) {
-  // This makes the array bigger on each iteration
-  array.push(new Array(10000000));
-
-  const memory = process.memoryUsage();
-  console.log((memory.heapUsed / 1024 / 1024 / 1024).toFixed(4), 'GB');
-}
+serviceWorker.unregister();
