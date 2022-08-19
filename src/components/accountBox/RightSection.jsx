@@ -8,6 +8,7 @@ import withWidth from "@material-ui/core/withWidth";
 import Loans from "../containers/Loans";
 import MobileHeader from "./MobileHeader";
 import { LoginForm } from "./loginForm";
+import { SignupForm } from "./signupForm";
 
 
 const styles = theme => createStyles({
@@ -22,7 +23,8 @@ const RightSection = (props) => {
         <div>
             <MobileHeader isOpen={props.isDrawerOpen} toggleDrawer={props.toggleDrawer}/>
             <div className={classes.root}>
-                <Route path="/" exact component={LoginForm} width={props.width}/>
+                <Route path="/" exact element={LoginForm} width={props.width}/>
+                <Route path="/signup" element={SignupForm} />
                 <Route path="/predict" component={Predictor} width={props.width}/>
                 <Route path="/apply" component={Application} />
                 <Route path="/loans" component={Loans} />
