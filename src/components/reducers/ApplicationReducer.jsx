@@ -5,9 +5,9 @@ const regExps = {
     name: /^[A-Za-z]{3,20}$/,
     companyName: /^[A-Za-z]+[A-Za-z0-9]$/,
     email: /^[a-z]+[a-z._]{2,}@[a-z]+[a-z.]+.[a-z]{2,}$/,
-    website: /^(http|https):\/\/[a-z]+.[a-z._-]+[a-z]+$/,
+    website: /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})/,
     address: /^(.){10,}/,
-    mobile: /^[1-9]{1,1}[0-9]{9,9}$/,
+    mobile: /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/,
     gender: /^(male|female|other)$/
 };
 

@@ -4,16 +4,17 @@ import {Predictor} from "../components/accountBox/predictor";
 import { SignupForm } from "../components/accountBox/signupForm";
 import { Overdraft} from "../components/containers/Loans"
 import {Apply} from "../components/containers/Application"
-
+import {Try} from "../try/account"
 
 
 export const AppRoutes = () => {
     return (
        <Routes>
         <Route path="/" element={<LoginForm />} />
+            <Route path="/login" element={Try} />
             <Route path="/signup" element={<SignupForm />} />
             <Route path="/forgot-password" element={<SignupForm />} />
-            <Route path="/predictor" element={<Predictor/>} />
+            <Route path="/predict" element={<Predictor/>} />
             <Route path="/apply" element={<Apply/>} />
             <Route path="/tracker" element={<Overdraft/>} />
        </Routes>

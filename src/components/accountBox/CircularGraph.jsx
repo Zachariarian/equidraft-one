@@ -121,7 +121,8 @@ const CircularGraph = props => {
                                     </div>
                                 </div>
                             </div>
-                            : <Loader
+                            : () =>
+                            <Loader
                                 type="Bars"
                                 color="primary"
                                 height="50"
